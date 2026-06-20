@@ -1,0 +1,20 @@
+# Entornos virtuales
+	venv/
+	# Carpeta de dependencias (si instalas localmente en el proyecto)
+	packages/
+	lib/
+	lib64/
+	# Bytecode generado al ejecutar scripts
+	__pycache__/
+	*.pyc
+	*.pyo
+	*.pyd
+	*.so
+	# Configuraciones de VS Code
+	.vscode/
+	# Carpetas de Mac / Windows
+	.DS_Store
+	Thumbs.db
+	# SECRETOS
+	.env
+
