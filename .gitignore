@@ -1,5 +1,6 @@
 # Entornos virtuales
 venv/
+Opcional_A/
 # Carpeta de dependencias (si instalas localmente en el proyecto)
 packages/
 lib/
