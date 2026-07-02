@@ -1,5 +1,7 @@
 import os
 import getpass
+import pandas as pd
+'''
 from google import genai
 
 if not os.getenv("GEMINI_API_KEY"):
@@ -12,6 +14,7 @@ print("GEMINI_API_KEY configurada:", "sí" if os.getenv("GEMINI_API_KEY") else "
 client = genai.Client()
 MODEL = "gemini-3-flash-preview"
 
+
 def summarize_overview_es(overview, title=""):
     overview = overview.strip()
     if not overview:
@@ -21,5 +24,5 @@ def summarize_overview_es(overview, title=""):
             model=MODEL,
             contents=f"Resume el siguiente texto en un máximo de 2 frases:\n{overview}"
         )
-    
-
+'''
+print(movies10)
