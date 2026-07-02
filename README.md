@@ -26,3 +26,5 @@ Valiéndonos de la API de [The Movie DB](https://www.themoviedb.org/) accedemos 
 Gracias a la API de Gemini somos capaces de traducir la información a el lenguaje nativo de la persona interesada de forma resumida `overveiew_es`
 
 En este caso nos estaremos focalizando en una version reducida de los datos, la cual se puede encontrar en la misma carpeta de `data` bajo el nombre de [movies_with_overview_and_homepage.csv](./data/movies_with_overview_and_homepage.csv)
+
+Toda la parte de APIs la podemos encontrar en otro jupyter notebook llamado [API.ipynd](./API.ipynb)
