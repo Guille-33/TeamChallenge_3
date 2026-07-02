@@ -1,7 +1,10 @@
 import os
 import getpass
 import pandas as pd
-'''
+
+movies = pd.read_csv("data/movies_with_overview_and_homepage.csv")
+
+
 from google import genai
 
 if not os.getenv("GEMINI_API_KEY"):
@@ -23,6 +26,14 @@ def summarize_overview_es(overview, title=""):
         return client.models.generate_content(
             model=MODEL,
             contents=f"Resume el siguiente texto en un máximo de 2 frases:\n{overview}"
-        )
-'''
-print(movies10)
+        ).text
+    
+movies["overview_es"] = ""
+for fila in movies.itertuples():
+    if pd.isna(fila.overview) or not str(fila.overview).strip():
+        continue                    # me salto filas sin sinopsis
+    movies.at[fila.Index, "overview_es"] = summarize_overview_es(str(fila.overview))
+
+movies.to_csv("data/movies_with_overview_and_homepage.csv", index=False)
+
+print(movies)
